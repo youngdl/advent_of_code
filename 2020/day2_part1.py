@@ -12,6 +12,8 @@ for line in lines:
     highest_time = int(info[0].split('-')[1])
     target_letter = info[1][0]
     password = info[2][:-1]
+    
+    #determine whether a pw is valid, and count the valid ones
     letter_count = 0
     for letter in password:
         if letter == target_letter:
