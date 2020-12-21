@@ -30,7 +30,6 @@ for item in string_list:
 
 # sort the list
 sorted_list = merge_sort(num_list)
-print(sorted_list)
 
 # Search for two number that sum to 2020
 n = len(num_list)
@@ -40,10 +39,6 @@ while left_index < n:
     left_num = sorted_list[left_index]
     right_num = sorted_list[right_index]
     sum = left_num + right_num
-    print('left: sorted_list[{}] --> {}'.format(left_index, left_num))
-    print('right: sorted_list[{}] --> {}'.format(right_index, right_num))
-    print('sum: {}'.format(sum))
-    import pdb; pdb.set_trace()
     if sum == 2020:
         break
     if sum > 2020:
