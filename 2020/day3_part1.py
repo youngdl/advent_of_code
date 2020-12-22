@@ -25,7 +25,7 @@ for line in digital_map:
 # count the number of trees that encountered
 i, j = 0, 0
 tree_num = 0
-for k in range(y_dim):
+for k in range(steps+1):
     tree_num = tree_num + digital_map[j][i]
     i += 3
     j += 1 
