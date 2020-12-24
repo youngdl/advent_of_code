@@ -62,6 +62,9 @@ def is_password_valid(entry: str) -> bool:
 
     if not re.match('^\d{9}$', info_lib['pid']):
         return False
+    
+    return True
+
 
 if __name__ == '__main__':
     main()
