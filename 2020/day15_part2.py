@@ -9,7 +9,6 @@ def main():
     last_value = 0
     for i in range(c):
         turn_dic[start_number[i]] = i
-    print(turn_dic)
     k = c+1
     while k < 30000000:
         if last_value not in turn_dic:
@@ -20,7 +19,6 @@ def main():
             last_value = k-1-turn_dic[last_value]
             turn_dic[temp] = k-1
         k += 1
-        # print(last_value)
     print(last_value)
 
 
