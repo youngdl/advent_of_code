@@ -7,8 +7,8 @@ def main():
     turn_dic = {}
     c = len(start_number)
     last_value = 0
-    for i in range(c):
-        turn_dic[start_number[i]] = i
+    for turn, spoke_num in enumerate(start_number):
+        turn_dic[spoke_num] = turn
     k = c+1
     while k < 30000000:
         if last_value not in turn_dic:
