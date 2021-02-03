@@ -40,16 +40,13 @@ def _isvalid(coordinate, active_set):
                     if (i,j,k) in active_set:
                         counts += 1
     
-    if (z,y,x) in active_set:
-        if counts == 2 or counts == 3:
+    if (z,y,x) in active_set 
+        if (counts == 2 or counts == 3):
             return True
-        else:
-            return False
     else:
         if counts == 3:
             return True
-        else:
-            return False
+    return False        
 
 if __name__ == '__main__':
     main()
